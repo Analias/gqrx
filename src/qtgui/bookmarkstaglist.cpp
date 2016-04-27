@@ -48,6 +48,7 @@ BookmarksTagList::BookmarksTagList(QWidget *parent, bool bShowUntagged )
     setSelectionMode(QAbstractItemView::SingleSelection);
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setSortingEnabled(true);
+    sortByColumn(1,Qt::AscendingOrder);
 }
 
 void BookmarksTagList::on_cellClicked(int row, int column)
